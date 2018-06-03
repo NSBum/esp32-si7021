@@ -7,10 +7,8 @@
  * Luca Dentella, www.lucadentella.it
  */
 
-#ifndef SI7021_H
-#define SI7021_H
-
-#include "owb.h"
+#ifndef __ESP_SI7021_H__
+#define __ESP_SI7021_H__
 
 #ifdef __cplusplus
 extern "C" {
@@ -24,10 +22,6 @@ extern "C" {
 
 // FreeRTOS (for delay)
 #include "freertos/task.h"
-
-
-#ifndef __ESP_SI7021_H__
-#define __ESP_SI7021_H__
 
 // sensor address
 #define SI7021_ADDR		0x40
