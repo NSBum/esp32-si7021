@@ -76,5 +76,8 @@ int si7021_write_user_register(uint8_t value);
 uint16_t read_value(uint8_t command);
 bool is_crc_valid(uint16_t value, uint8_t crc);
 
+#ifdef __cplusplus
+}
+#endif
 
 #endif  // __ESP_SI7021_H__
