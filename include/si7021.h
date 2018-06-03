@@ -7,6 +7,14 @@
  * Luca Dentella, www.lucadentella.it
  */
 
+#ifndef SI7021_H
+#define SI7021_H
+
+#include "owb.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
  // Error library
 #include "esp_err.h"
@@ -73,6 +81,8 @@ uint8_t si7021_read_user_register();
 int si7021_write_user_register(uint8_t value);
 uint16_t read_value(uint8_t command);
 bool is_crc_valid(uint16_t value, uint8_t crc);
+ 
+ #endif
 
 
 #endif  // __ESP_SI7021_H__
